@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #151515fc;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1)) ;
+}
+.logo {
+	margin-top: 20px;
+	margin-left: 427px;
+}
+.image {
+	display: block;
+	margin-right: 300px;
+	margin-left: 410px;
+	margin-top: 50px;
+	max-width: 200px;
+	max-height: 200px;
+	opacity: 0.8;
+	border :solid 1px #565656;
+
+}
+.name2 {
+	display: inline-block;
+	font-size: 30px;
+	font-family: roboto;
+	text-align: center;
+	font-weight: 390;
+	letter-spacing: 3px;
+	color: #fffffff7;
+	margin-top: 30px;
+	margin-left: 456px;
+}
+.para {
+	font-size: 20px;
+	font-family: roboto;
+	text-align: center;
+	font-weight: 390;
+	letter-spacing: 3px;
+	color: #fffffff7;
+}
+.name{
+	position: relative;
+	display: inline-block;
+	background-color: #ff0000ba;
+	font-weight: 400;
+}
+.instagram {
+	background-image: linear-gradient(to bottom left, rgb(70.6,18.0,58.4),rgb(91.0,34.1,25.5));
+	display: inline-block;
+	filter: brightness(250%);
+	font-weight: 400;
+	margin:0;
+	padding: 0;
+}
+.insta-drop {
+	display: none;
+	position: relative;
+	z-index: 1;
+	font-weight: 390;
+}
+.insta-drop a:link, .insta-drop a:visited {
+	text-decoration: none;
+	background-color: #000000;
+	color: #fffffff7;
+}
+.instagram:hover .insta-drop {
+	display: block;
+}
+.discord {
+	background-color: #6f85d5;
+	font-weight: 400;
+	display: inline-block;
+}
+.discord-drop {
+	display: none;
+	background-color: #000000;
+	position: relative;
+	z-index:1;
+}
+.discord:hover .discord-drop {
+	display: block;
+}
+.insider-info {
+	font-size: 0.8em;
+}
