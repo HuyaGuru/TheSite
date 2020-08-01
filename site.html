@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="site.js"></script> 
+	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="site.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,31 +10,44 @@
 </head>
 <body>
 	<div class="logo">
-	<a href="site.html"><img src="site_logo.png"></a>
+		<a href="site.html">The Site</a>
 	</div>
-	<img class="image" src="img.jpg">
-	<div class="name2" >About :</div>
+	<div class="side">
+		<li><a id="aboutt-me" class="about-me" onclick="activea();about()">About Me </a></li>
+		<li><a id="contactt-me" class="contact-me" onclick="activec();contact()">Contact Me </a></li>
+	</div>
 	<div class="para">
-		<p>Let me introduce myself.</p>
-		<p>My name is <span class="name">Abhishek Shandilya</span></p>
-		<p>and I created this site because it sounded fun.</p>
-		<p>I know some basic C, C++, Python, HTML & CSS and would love to learn more. You could help me in this crusade of learning by providing me with some feedback or ideas to work on.</p>
-		<p>You could contact me via :</p>
-		<div class="instagram" >
-			Instagram
-			<div class="insta-drop" >
-				<a href="https://www.instagram.com/abhishekshandilyaa/?hl=en">@abhishekshandilyaa<a>
+		<div id="about" style="display: none;">
+			<div class="name2">About Me :</div>
+			<div class="head">
+				<p>My name is <span class="profile">Abhishek Shandilya</span>
+					<br>
+				</div>
+			I know basics of C, C++, Python, HTML & CSS and would love to learn more. You could accompany me on this journey of learning with some feedback or ideas to work on.</p>
+			<h4>Projects/Applications: </h4>
+			<div class="list" >
+				<li><a class="link" href="site.html" >The Site</a> - HTML & CSS</li>
+			<li>Webscraper - Python</li>
+		</div>
+		</div>
+		<div id="contact" style="display: none;">
+			<p>You could contact me via :</p>
+			<div class="instagram" >
+				Instagram
+				<div class="insta-drop" >
+					<a href="https://www.instagram.com/abhishekshandilyaa/?hl=en">@abhishekshandilyaa</a>
+				</div>
+			</div>
+			<p>or</p>
+			<div class="github">
+				Github
+				<div class="github-drop">
+					<a href="https://github.com/HuyaGuru">HuyaGuru</a>
+				</div>
 			</div>
 		</div>
-		<p>or</p>
-		<div class="discord">
-			Discord
-			<div class="discord-drop">
-				#4109Ezzee
-			</div>
-		</div>
-		<p class="insider-info">(Insider info: if you text me at discord i might see it earlier than instagram)</p>
-		<p>If you are interested in employing me. Here's my work <span class="name"> Profile </span> for you to checkout<span class="insider-info"> (Insider info: it wont be much different than info on this page, just a tad bit professional. )</span></p>
+		<div class="name2">About Website :</div>
+		<p>This site is a work-in-progress and will stay that way as it will always be updating.</p>
 	</div>
 </body>
 </html>

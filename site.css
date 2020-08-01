@@ -1,13 +1,46 @@
 * {
 	box-sizing: border-box;
+	color: #000000f7;
+	font-family: roboto;
+	letter-spacing: 2px;
 }
 body {
-	background-color: #151515fc;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1)) ;
+	background-color: #fffffffc;
+	/*! background-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1)) ; */
+}
+.side {
+	width: 25%;
+	float: left;
+	height: 100vh;
+	text-align: right;
+	padding-top: 20px;
+}
+a.about-me, a.contact-me {
+	color: #000000d9;
+	font-size: 1.2em;
+	border-right: solid 1px #1515152b;
+	padding-right: 4px;
+	background-color: #d0d0f43b;
+	display: inline-block;
+	width: 123.767px;
+	text-align: right;
+}
+.side li {
+	list-style-type: none;
+}
+a.about-me:hover, a.contact-me:hover {
+	cursor: pointer;
+	color: black;
 }
 .logo {
 	margin-top: 20px;
-	margin-left: 427px;
+	border-bottom: 0.5px solid #fff3;
+	text-align: left;
+	font-size: 3em;
+	padding-left: 20px;
+}
+.logo a:link {
+	text-decoration: none;
 }
 .image {
 	display: block;
@@ -21,7 +54,6 @@ body {
 
 }
 .name2 {
-	display: inline-block;
 	font-size: 30px;
 	font-family: roboto;
 	text-align: center;
@@ -29,58 +61,79 @@ body {
 	letter-spacing: 3px;
 	color: #fffffff7;
 	margin-top: 30px;
-	margin-left: 456px;
 }
 .para {
 	font-size: 20px;
 	font-family: roboto;
-	text-align: center;
+	text-align: left;
 	font-weight: 390;
 	letter-spacing: 3px;
 	color: #fffffff7;
+	height: 100vh;
+	width: 75%;
+	float: right;
+	padding-left: 20px;
 }
-.name{
-	position: relative;
+.head p {
+	display: block;
+	padding-right: 200px;
+	text-align: center;
+}
+.name, .profile, .link{
 	display: inline-block;
 	background-color: #ff0000ba;
 	font-weight: 400;
+	color: #fffffff7;
 }
-.instagram {
-	background-image: linear-gradient(to bottom left, rgb(70.6,18.0,58.4),rgb(91.0,34.1,25.5));
-	display: inline-block;
-	filter: brightness(250%);
-	font-weight: 400;
-	margin:0;
-	padding: 0;
-}
-.insta-drop {
+a.profile-drop {
+	background-color: white;
 	display: none;
 	position: relative;
 	z-index: 1;
-	font-weight: 390;
+	min-width: 227.133px; 
+	color: black;
 }
-.insta-drop a:link, .insta-drop a:visited {
+a.profile-drop:link, a.profile-drop:visited {
 	text-decoration: none;
-	background-color: #000000;
-	color: #fffffff7;
+}
+.profile:hover .profile-drop {
+	display: block;
+}
+.instagram {
+	background-image: linear-gradient(to bottom left, rgb(70.6,18.0,58.4),rgb(91.0,34.1,25.5));
+	filter: brightness(250%);
+}
+.insta-drop a:link, .insta-drop a:visited, .github-drop a:link, .github-drop a:visited {
+	text-decoration: none;
 }
 .instagram:hover .insta-drop {
 	display: block;
 }
-.discord {
-	background-color: #6f85d5;
+.github {
+	background-color: #302f2f;
+}
+.github, .instagram {
 	font-weight: 400;
 	display: inline-block;
+	text-align: center;
+	color: #fffffff7;
 }
-.discord-drop {
+.github-drop, .insta-drop {
 	display: none;
-	background-color: #000000;
+	background-color: white;
 	position: relative;
 	z-index:1;
 }
-.discord:hover .discord-drop {
+.insta-drop {
+	font-weight: bold;
+}
+.github:hover .github-drop {
 	display: block;
 }
 .insider-info {
 	font-size: 0.8em;
+}
+.list, .list a:link {
+	text-decoration: none;
+	list-style: none;
 }
