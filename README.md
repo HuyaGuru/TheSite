@@ -1,2 +1,2 @@
-# TheSite
-A Website made by me.
+# ThePage
+A Webpage made by me.
